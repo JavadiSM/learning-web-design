@@ -1,1 +1,2 @@
-# learning-web-design
+# web-design
+Welcome to my web design learning journey! In this repository, I document my progress as I dive into the exciting world of web design. From mastering HTML and CSS basics to exploring advanced techniques in responsive design and user experience, I am determined to improve my skills and create stunning websites. Feel free to join me on this adventure, share your feedback, and collaborate on projects. Let's build beautiful and functional websites together!
