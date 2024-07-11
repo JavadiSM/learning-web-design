@@ -2,58 +2,119 @@
 <html lang="en">
 <head>
     <style>
+        body {
+            font-family: sans-serif;
+            background-color: #030404;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
         p {
             border: 2px solid powderblue;
+            border-radius: 30px;
             padding: 2px;
-            margin: 20px;
+            margin: 20px auto;
+            width: 50%;
+            text-align: center;
         }
 
         div {
             width: 30%;
             display: inline-block;
-            margin: auto;
+            margin: 20px auto;
+            text-align: left;
+            background-color: #111111;
+            padding: 20px;
+            border-radius: 90px;
         }
-        .class{
-            margin: auto;
+
+        h2 {
+            color: powderblue;
         }
+
+        .class {
+            margin: auto;
+            display: block;
+            max-width: 100px;
+        }
+
+        a {
+            color: powderblue;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        pre {
+            background-color: #111111;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto; /* Allow horizontal scrolling for long lines */
+            font-family: monospace;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container > * {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+        }
+
     </style>
-    <title>
-        hello html
-    </title>
+    <title>Hello HTML</title>
     <link rel="icon" type="image/x-icon" href="../resources/images/AlpineMountain.png">
 </head>
-<script>
-    document.getElementById("up").offsetTop = 10;
-</script>
 <noscript>oops lad, enable java script</noscript>
 <!-- comment -->
-<body style="text-align:center;background-color: #030404;color: #ffffff;">
-<h1 style="font-size:60px; color: #ffffff;" id="up"> title</h1>
-<strong style="font-size: math">hello world</strong>
-<p style="text-decoration-color: #010303;text-align:center;">
-    <button onclick="document.location='https://www.w3schools.com/html/html_links.asp'">HTML Tutorial</button>
-    <br>
-    <a
-            title="https://github.com/JavadiSM" href="https://github.com/JavadiSM" target="_blank">
-        <mark>
-            <img class="class" src="../resources/images/AlpineMountain.png" alt="haha">
-        </mark>
-    </a>
-    <br>
-</p>
-<q>q tag</q>
-<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-<blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp"></blockquote>
-element defines a section that is quoted from another source.
-<hr>
-<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-<address>
-    Written by SMJ<br>
-    Visit:<br>
-    lala.com<br>
-    Iran
-</address>
-<pre>
+<body>
+
+<div class="container">
+    <h1 id="up">Title</h1>
+    <p><strong>Hello world</strong></p>
+    <p>
+        <button onclick="document.location='https://www.w3schools.com/html/html_links.asp'">HTML Tutorial</button>
+        <br>
+        <a title="https://github.com/JavadiSM" href="https://github.com/JavadiSM" target="_blank">
+            <mark>
+                <img class="class" src="../resources/images/AlpineMountain.png" alt="haha">
+            </mark>
+        </a>
+        <br>
+    </p>
+    <q>q tag</q>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <blockquote>
+        <p>
+            <cite>The Scream</cite> by Edvard Munch. Painted in 1893.
+        </p>
+    </blockquote>
+    <hr>
+    <address>
+        Written by SMJ<br>
+        Visit:<br>
+        lala.com<br>
+        Iran
+    </address>
+    <pre>
     as
     asasd
     asd
@@ -106,27 +167,29 @@ element defines a section that is quoted from another source.
     as
     das
 </pre>
-<hr>
-<br>
-<h2>divs</h2>
-<div>
+    <hr>
+    <h2>Divs</h2>
+    <div>
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+    <div>
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+    <div>
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+    </div>
+    <a href="#up">Jump to Top</a>
+</div>
 
-    <h3>London</h3>
-    <p>London is the capital city of England.</p>
-    <p>London has over 13 million inhabitants.</p>
-</div>
-<div>
-    <h2>Oslo</h2>
-    <p>Oslo is the capital city of Norway.</p>
-    <p>Oslo has over 600.000 inhabitants.</p>
+<div class="footer">
+    <p>Copyright &copy; 2024 Javadi</p>
 </div>
 
-<div>
-    <h2>Rome</h2>
-    <p>Rome is the capital city of Italy.</p>
-    <p>Rome has almost 3 million inhabitants.</p>
-</div>
-<br>
-<a href="#up">jump to up</a>
 </body>
 </html>
