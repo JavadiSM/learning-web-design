@@ -1,0 +1,24 @@
+body {
+    background-color: #030404;
+}
+h1 {
+    color: yellow;
+}
+#p1 {
+    color: white;
+}
+#p2 {
+    color: #deb8b8;
+}
+#p3 {
+    color: #df6868;
+}
+#p4 {
+    color: #f01a1a;
+}
+.odd {
+    font-size: large;
+}
+.even {
+    font-size: smaller;
+}
