@@ -7,12 +7,47 @@
 </head>
 <body>
 
-    <form action="login.html" method="post">
-        <label for="username">username</label>
-        <input  type="text" id="username" placeholder="username should be at least 4 chars" required minlength="4" maxlength="10">
+    <form action="login.html" method="post" enctype="multipart/form-data">
+            <label for="username">username</label>
+            <input  type="text" id="username" placeholder="username should be at least 4 chars" required minlength="4" maxlength="10">
         <br>
-        <label for="password">password</label>
-        <input  type="password" id="password" placeholder="password" required>
+            <label for="password">password</label>
+            <input  type="password" id="password" placeholder="password" required>
+        <br>
+            <label for="email">email</label>
+            <input  type="email" id="email" placeholder="email" required>
+        <br>
+            <label for="tel">phone number</label>
+            <input type="tel" id="tel" placeholder="09123456789" pattern="09[0-9]{8}" required>
+        <br>
+            <label for="bday">birthday</label>
+            <input type="date" id="bday">
+        <br>
+            <label for="q">how?</label>
+            <input type="number" id="q" min="0" max="100" value="3">
+        <br>
+            <label for="title" >title:</label>
+            <label for="Mr">Mr</label>
+            <input type="radio" id="Mr" name="title">
+            <label for="Ms" >Ms</label>
+            <input type="radio" id="Ms" name="title">
+        <br>
+            <label for="payment">select:</label>
+            <select id="payment">
+                <option value="visa">visa</option>
+                <option value="card">card</option>
+                <option value="giftCard">giftCard</option>
+            </select>
+        <br>
+            <label for="send me email">send me email</label>
+            <input type="checkbox" id="send me email">
+        <br>
+            <label for="comment">anything to add?</label>
+            <textarea rows="3" cols="20" id="comment"></textarea>
+        <br>
+        <label for="file">file:</label>
+        <input type="file" id="file" accept="image/png, image/jpeg">
+
         <br>
         <input type="reset">
         <input type="submit">
