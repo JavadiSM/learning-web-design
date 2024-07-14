@@ -1,24 +1,40 @@
+@font-face {
+    src: url("../resources/fonts/Roboto-Light.ttf");
+    font-family: "Roboto Light";
+}
+
 body {
     background-color: #030404;
+    font-family: "Roboto Light", verdana, arial sans-serif;
+    font-size: 1em;
 }
+
 h1 {
     color: yellow;
 }
+
 #p1 {
     color: white;
+    font-weight: bold;
+    font-style: italic;
 }
+
 #p2 {
     color: #deb8b8;
 }
+
 #p3 {
     color: #df6868;
 }
+
 #p4 {
     color: #f01a1a;
 }
+
 .odd {
     font-size: large;
 }
+
 .even {
     font-size: smaller;
 }
