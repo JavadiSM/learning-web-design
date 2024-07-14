@@ -4,67 +4,30 @@
 }
 
 body {
-    background-color: #030404;
-    font-family: "Roboto Light", verdana, arial sans-serif;
-    font-size: 1em;
 }
 
 h1 {
-    color: #a7a77e;
-    border-style: solid;
-    border-width: 10px;
-    border-color: #cd9718;
-    border-radius: 10px;
+    font-size: 100px;
+    text-shadow: 3px 3px 6px red, -3px -3px 6px blue;
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: #b22525;
+    box-shadow: 3px 3px 6px red;
 }
 h1 {
-    color: #a7a77e;
-    border: 10px solid #cd9718 ;
-    border-radius: 10px;
 }
 h2 {
-    color: #b2b242;
-    border-style: groove;
 }
 
 h3 {
-    color: yellow;
-    border-style: ridge;
 }
 #p1 {
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    border-style: dashed;
 }
 
 #p2 {
-    color: #deb8b8;
-    border-style: double;
 }
 
 #p3 {
-    color: #df6868;
-    border-style: inset;
-}
-
-#p4 {
-    color: #f01a1a;
-    border-style: outset;
-}
-
-#p5 {
-    color: #ffffff;
-    border-radius: 300px;
-    border-bottom: 10px dashed white;
-    border-top: 2px groove red;
-    border-left: 20px solid purple;
-    border-right: 4px dotted green;
-}
-
-.odd {
-    font-size: large;
-}
-
-.even {
-    font-size: smaller;
 }
