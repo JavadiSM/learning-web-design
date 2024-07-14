@@ -3,24 +3,7 @@
 /*fixed*/
 /*absolute*/
 /*sticky*/
-#box1 {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-}
-
-#box2 {
-    width: 100px;
-    height: 100px;
-    background-color: #0048ff;
-    position: fixed;
-    bottom: 0;
-}
-
-#box3 {
-    width: 50px;
-    height: 50px;
-    background-color: #5c6876;
-    position: absolute;
+body{
+    background-image: url("../resources/images/login.png");
+    background-repeat: no-repeat;
 }
