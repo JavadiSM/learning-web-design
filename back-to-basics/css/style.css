@@ -1,26 +1,18 @@
-@font-face {
-    src: url("../resources/fonts/Roboto-Light.ttf");
-    font-family: "Roboto Light";
+* {
+    box-sizing: border-box;
 }
-
 body {
-    border: 10px dotted black;
-    display: flow-root;
 }
-
-h1 {
+span {
+    background-color: blue;
+    display: block;
+    width: 100px;
 }
-p{
-
-}
-#AT-AT{
-    height: 100px;
+.container{
+    padding: 25px;
+    border: 4px solid black;
+    height: auto;
+    width: 110px;
     float: left;
-    margin-right: 0;
-}
-
-#X-wing{
-    height: 50px;
-    float: right;
-    margin-right: 10px;
+    min-height: 90%;
 }
