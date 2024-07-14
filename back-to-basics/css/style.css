@@ -4,7 +4,8 @@
 }
 
 body {
-    margin: 0;
+    border: 10px dotted black;
+    display: flow-root;
 }
 
 h1 {
@@ -12,19 +13,14 @@ h1 {
 p{
 
 }
-.box{
-    border: 5px solid black;
-    font-size: 5em;
-    width: 250px;
-   height: 250px;
+#AT-AT{
+    height: 100px;
+    float: left;
+    margin-right: 0;
 }
-#firstBox{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    background-color: red;
-}
-#secondBox{
-    background-color: blue;
-    margin: auto;
+
+#X-wing{
+    height: 50px;
+    float: right;
+    margin-right: 10px;
 }
