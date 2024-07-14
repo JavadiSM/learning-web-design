@@ -4,30 +4,27 @@
 }
 
 body {
+    margin: 0;
 }
 
 h1 {
-    font-size: 100px;
-    text-shadow: 3px 3px 6px red, -3px -3px 6px blue;
 }
-#box1{
-    width: 100px;
-    height: 100px;
-    background-color: #b22525;
-    box-shadow: 3px 3px 6px red;
-}
-h1 {
-}
-h2 {
-}
+p{
 
-h3 {
 }
-#p1 {
+.box{
+    border: 5px solid black;
+    font-size: 5em;
+    width: 250px;
+   height: 250px;
 }
-
-#p2 {
+#firstBox{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    background-color: red;
 }
-
-#p3 {
+#secondBox{
+    background-color: blue;
+    margin: auto;
 }
