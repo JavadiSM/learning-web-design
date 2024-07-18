@@ -1,29 +1,22 @@
-h1::first-letter{
-    font-size: 2em;
-    font-style: italic;
+.pagination {
+    text-align: center;
 }
-p::first-line{
-    color: red;
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
 }
-p::selection{
-    color: red;
-    background-color: black;
+
+.pagination a.active {
+    background-color: #01b901;
+    font-weight: bold;
+    border-radius: 100px;
 }
-#fruit::before{
-    content: "😋";
-}
-#fruit li::before{
-    content: "✅";
-}
-#fruit li::marker{
-    content: "(●'◡'●)";
-}
-#apple::after{
-    content: "🍏";
-}
-#orange::after{
-    content: "🍊";
-}
-#banana::after{
-    content: "🍌";
+.pagination a:hover:not(.active){
+    background-color: #b0aeae;
+    font-weight: bold;
+    border-radius: 100px;
+
 }
