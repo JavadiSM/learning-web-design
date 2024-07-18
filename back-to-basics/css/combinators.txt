@@ -1,0 +1,4 @@
+descendant = " "
+child = " > "
+general sibling = " ~ "
+adjecent sibling = " + "
