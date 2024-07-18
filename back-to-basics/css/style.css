@@ -14,9 +14,39 @@
     font-weight: bold;
     border-radius: 100px;
 }
-.pagination a:hover:not(.active){
+
+.pagination a:hover:not(.active) {
     background-color: #b0aeae;
     font-weight: bold;
     border-radius: 100px;
 
+}
+
+.dropDown button {
+    background-color: grey;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    cursor: crosshair;
+}
+
+.dropDown a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+    padding: 10px 5px;
+}
+
+.dropDown .content {
+    display: none;
+    position: absolute;
+    min-height: 100px;
+    background-color: white;
+    box-shadow: 2px 2px 5px blue;
+}
+.dropDown:hover .content {
+    display: block;
+}
+.dropDown {
+    display: inline-block;
 }
