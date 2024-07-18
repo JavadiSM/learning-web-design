@@ -1,58 +1,29 @@
-/*static*/
-/*relative*/
-/*fixed*/
-/*absolute*/
-/*sticky*/
-a:link {
-    font-size: 20px;
-    color: #00ffef;
-}
-
-a:hover {
-
-    font-size: 1.2em;
-    color: #ff0037;
-}
-
-a:target {
-    target: front;
-}
-
-a:active {
-    font-size: 1.3em;
-    color: #28ff00;
-}
-
-a:visited {
-    color: yellow;
-}
-
-ul {
+h1::first-letter{
     font-size: 2em;
+    font-style: italic;
 }
-
-li:hover {
+p::first-line{
     color: red;
 }
-
-li:not(:hover) {
-    color: blue;
-}
-
-li:nth-child(3n+2) {
-    background-color: grey;
-}
-
-li:not(:nth-child(3n+2)) {
-    background-color: #75e9bd;
-}
-
-#fssss p {
-    background-color: blue;
+p::selection{
     color: red;
-    display: none;
+    background-color: black;
 }
-
-#fssss:hover p {
-    display: block;
+#fruit::before{
+    content: "😋";
+}
+#fruit li::before{
+    content: "✅";
+}
+#fruit li::marker{
+    content: "(●'◡'●)";
+}
+#apple::after{
+    content: "🍏";
+}
+#orange::after{
+    content: "🍊";
+}
+#banana::after{
+    content: "🍌";
 }
