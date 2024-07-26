@@ -37,10 +37,12 @@ main {
 main {
     margin: 0;
 }
-.cont{
+
+.cont {
     min-width: 200px;
     float: left;
 }
+
 .box {
     position: relative;
     transform: translate(100px, 100px);
@@ -53,8 +55,11 @@ main {
     align-items: center;
     justify-content: center;
     transform: translate(40px, 40px) skew(-30deg, -10deg);
+    animation-name: slideLeft;
+    animation-duration: 4s;
 }
-.box:hover{
+
+.box:hover {
     box-shadow: 4px 4px 50px black;
 }
 
@@ -70,6 +75,58 @@ main {
 #box3 {
     background-color: #191919;
 }
+
 #box1:hover {
     background-color: #666666;
+}
+
+img {
+    animation-name: rotate5;
+    animation-duration: 4s;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(100px)
+    }
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(100px)
+    }
+}
+
+@keyframes rotate {
+    30% {
+        transform: rotate(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes rotate5 {
+    10% {
+        opacity: 0.6;
+    }
+    50% {
+        transform: rotate(180deg) rotateX(180deg) scale(4,4);
+        opacity: 0.2
+    }
+    70% {
+        opacity: 0.6;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+@keyframes grow {
+    30% {
+        transform: scale(3, 3)
+    }
+}
+
+@keyframes grow {
+    70% {
+        transform: scale(0.5, 0.5)
+    }
 }
