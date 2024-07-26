@@ -32,3 +32,20 @@ main {
 .bar li {
     float: left;
 }
+.gallery {
+    display: inline-block;
+    border: 6px solid grey;
+    margin: 10px;
+    width: 200px;
+}
+.gallery:hover{
+    border: 6px solid black;
+}
+.gallery .description{
+    padding: 10px;
+    text-align: center;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}
