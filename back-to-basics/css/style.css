@@ -32,20 +32,35 @@ main {
 .bar li {
     float: left;
 }
-.gallery {
-    display: inline-block;
-    border: 6px solid grey;
-    margin: 10px;
+.cont{
+    height: 800px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+.box {
+    border-radius: 6px;
     width: 200px;
-}
-.gallery:hover{
-    border: 6px solid black;
-}
-.gallery .description{
-    padding: 10px;
+    height: 150px;
+    font-size: 5em;
     text-align: center;
+    color: white;
 }
-.gallery img{
-    width: 100%;
-    height: auto;
+.box:hover {
+    box-shadow: 5px 5px 19px grey;
+}
+#box1{
+    background-color: red;
+}
+#box2{
+    background-color: yellow;
+}
+#box3{
+    background-color: green;
+}
+#box4{
+    background-color: black;
 }
