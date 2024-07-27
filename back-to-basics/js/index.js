@@ -1,13 +1,9 @@
-let x;
-x = 100;
-console.log(x);
-let age = 19;
-console.log(`I am ${age} years old ${typeof age}`);
-let firstName = "first name";
-console.log(`huh ${firstName}`);
-let online = true;
-console.log(`status: ${online}`);
-document.getElementById("p1").textContent = `your name is ${firstName};`
-document.getElementById("p2").textContent = age;
-document.getElementById("p3").textContent = `online: ${online}`;
-
+//easy way to accept input:
+// let firstName = window.prompt("your name?");
+// window.alert(`welcome ${firstName}`);
+// but THIS IS THE WAY(best):
+let username;
+document.getElementById("usernameSubmit").onclick = function () {
+    username = document.getElementById("username").value;
+    document.getElementById("myh1").textContent = "hello dear" + username;
+}
