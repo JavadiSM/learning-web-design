@@ -5,3 +5,9 @@ body{
 button{
     font-size: 2em;
 }
+#result-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}

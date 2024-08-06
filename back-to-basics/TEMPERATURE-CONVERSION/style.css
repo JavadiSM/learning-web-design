@@ -1,0 +1,45 @@
+body {
+    font-size: smaller;
+    font-family: Verdana, Geneva, Tahoma, "sans-serif";
+    font-weight: bolder;
+    font-style: oblique;
+    background-color: #8787f5;
+}
+
+#myForm {
+    cursor: pointer;
+    text-align: center;
+    color: red;
+    border: 30px solid #f5b185;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    padding: 3em;
+    border-radius: 120px;
+    background-color: #d4d478;
+    box-shadow: 0 0 2000px #f5b185;
+    animation-duration: 2s;
+    animation-name: shine;
+    animation-iteration-count: 10000;
+}
+
+#myForm:hover {
+    animation-play-state: paused; /* Stop the animation on hover */
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    line-height: 30px;
+}
+
+@keyframes shine {
+    50% {
+        color: rgba(255, 0, 0, 0.69);
+        border: 40px solid #ff6400;
+        background-color: #dbdb00;
+        font-size: 1.1em;
+        box-shadow: 0 0 2000px #ff6400;
+    }
+}
