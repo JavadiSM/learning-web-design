@@ -2,28 +2,15 @@ function generateRandomInt(min, max) {
     return Math.floor(Math.random * (max - min + 1)) + min;
 }
 
-function submitInfo() {
-    if (checkbox.checked) {
-        if (studentRadio.checked){
-            result.textContent = `checked as student!`
-        } else if(parentsRadio.checked){
-            result.textContent = `checked as parent!`
-        } else {
-            result.textContent = `checked as teacher!`
-        }
-    } else {
-        result.textContent = `not checked`
-    }
-}
+const array_number = [1, 2, 3];
+let max = Math.max(...array_number);
+console.log(max, typeof max);
 
-const result = document.getElementById("result");
-const checkbox = document.getElementById("isChecked");
+const username = "cool";
+let letters = [...username].join('_');
+console.log(letters);
 
-const studentRadio = document.getElementById("student");
-const parentsRadio = document.getElementById("parents");
-const teacherRadio = document.getElementById("teacher");
-
-const submitBtn = document.getElementById("submit");
-submitBtn.onclick = function (){
-    submitInfo()
-}
+let fruits = ["apple","orange","banana"];
+let vegetables = ["carrots","cabbage"];
+let all = [...fruits,...vegetables,"milk"];
+console.log(all)
