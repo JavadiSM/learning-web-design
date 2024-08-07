@@ -13,6 +13,7 @@ function generatePassword(length, hasLower, hasUpper, hasSpecial, hasNumber) {
 
     let password = "";
     let allowedChars = "";
+
     allowedChars += hasLower ? lowerCases : "";
     allowedChars += hasUpper ? upperCases : "";
     allowedChars += hasNumber ? digits : "";
@@ -27,4 +28,20 @@ function generatePassword(length, hasLower, hasUpper, hasSpecial, hasNumber) {
     }
 
     return password;
+}
+
+sum(display, 1, 2);
+sum(displayDOM, 1, 2);
+
+function sum(callback, x, y) {
+    let result = x + y;
+    callback(result , document.getElementById("H"));
+}
+
+function display(toBeDisplayed) {
+    console.log(toBeDisplayed)
+}
+
+function displayDOM(toBeDisplayed, element) {
+    element.textContent = toBeDisplayed;
 }
