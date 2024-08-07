@@ -2,36 +2,29 @@ function generateRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function printFoods(...foods) {
-    console.log(foods);
-}
-
-function createArray(...array) {
-    return array
-}
-
-function sum(...array) {
-    let sum = 0;
-    for (let element of array) {
-        sum += element;
+function generatePassword(length, hasLower, hasUpper, hasSpecial, hasNumber) {
+    if (length < 1) {
+        throw "ERROR: GENERATED PASSWORD LENGTH SHOULD BE GREATER THAN ZERO"
     }
-    return sum;
-}
+    const lowerCases = "abcdefghijklmnopqrstuvwxyz";
+    const upperCases = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const specials = "!@#$%^&*()_=-+";
+    const digits = "0123456789";
 
-function average(...array) {
-    return sum(...array) / array.length;
-}
+    let password = "";
+    let allowedChars = "";
+    allowedChars += hasLower ? lowerCases : "";
+    allowedChars += hasUpper ? upperCases : "";
+    allowedChars += hasNumber ? digits : "";
+    allowedChars += hasSpecial ? specials : "";
 
-function combineStrings(...array) {
-    return array.join("<->")
-}
+    if (allowedChars.length === 0) {
+        throw "ERROR: GENERATED PASSWORD SHOULD CONTAIN SOME CHARS";
+    }
+    for (let i = 0; i < length; i++) {
+        const randomIndex = generateRandomInt(1, allowedChars.length);
+        password += allowedChars[randomIndex];
+    }
 
-const food1 = "a";
-const food2 = "b";
-const food3 = "c";
-const food4 = "d";
-printFoods(food1, food2, food3, food4);
-console.log(createArray(food1, food2, food3, food4));
-console.log(sum(1, 3, 53, 2));
-console.log(average(1, 3, 53, 2));
-console.log(combineStrings("aa","bb","aa"));
+    return password;
+}
