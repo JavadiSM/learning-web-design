@@ -1,13 +1,31 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="res/icon.png">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>dice roller</title>
 </head>
 <body>
 
+<div id="container">
+    <div id="music-container">
+        music
+        <audio controls loop id="music-main">
+            <source src="res/Star Wars - Cantina Song.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <h1 style="cursor: not-allowed;font-weight: bold;font-style: italic;">DICE ROLLER</h1>
+    <label for="num"># of dice</label>
+    <input id="num" type="number" value="1" min="1">
+    <button id="diceBtn">roll</button>
+    <div id="result-container"></div>
+    <div id="image-container"></div>
+</div>
+<script src="index.js">
+</script>
 </body>
 </html>
