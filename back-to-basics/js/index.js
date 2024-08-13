@@ -31,16 +31,15 @@ function generatePassword(length, hasLower, hasUpper, hasSpecial, hasNumber) {
 }
 
 let numbers = [1, 2, 3, 4, 5, 23, 1, 7, 34, 12, 11, 1, 3, 7, 8, 5, 6];
-print(numbers.reduce(sum))
-print(numbers.reduce(maximum))
-function sum(accumulator, element) {
-    return accumulator + element;
-}
+console.log(numbers.map((element) => {
+    return Math.pow(element, 3);
+}));
+console.log(numbers.map((element) => {
+    return Math.pow(element, 2);
+}));
+console.log(numbers.filter((element) => {
+    return element % 2 === 0;
+}));
 
-function print(u) {
-    console.log(u)
-}
-
-function maximum(accumulator, element) {
-    return Math.max(accumulator, element);
-}
+setTimeout(() => console.log("hello"), 3000);
+const hello = (name) => console.log(`hello ${name}`);
