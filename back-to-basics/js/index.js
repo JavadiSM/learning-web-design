@@ -30,18 +30,38 @@ function generatePassword(length, hasLower, hasUpper, hasSpecial, hasNumber) {
     return password;
 }
 
-sum(display, 1, 2);
-sum(displayDOM, 1, 2);
+let numbers = [1, 2, 3, 4, 5];
+numbers.forEach(double);
+numbers.forEach(square);
+numbers.forEach(display);
 
-function sum(callback, x, y) {
-    let result = x + y;
-    callback(result , document.getElementById("H"));
+function double(element, index, array) {
+    array[index] = element * 2;
 }
 
-function display(toBeDisplayed) {
-    console.log(toBeDisplayed)
+function display(element) {
+    console.log(element);
 }
 
-function displayDOM(toBeDisplayed, element) {
-    element.textContent = toBeDisplayed;
+function square(element, index, array) {
+    array[index] = Math.pow(element, 2)
+}
+
+let fruits = ["apple", "orange", "banana", "tomato"];
+fruits.forEach(upperCase);
+fruits.forEach(display);
+fruits.forEach(lowerCase);
+fruits.forEach(cap);
+fruits.forEach(display);
+
+function upperCase(element, index, array) {
+    array[index] = element.toUpperCase();
+}
+
+function lowerCase(element, index, array) {
+    array[index] = element.toLowerCase();
+}
+
+function cap(element, index, array) {
+    array[index] = element[0].toUpperCase() + element.slice(1);
 }
