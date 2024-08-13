@@ -30,25 +30,17 @@ function generatePassword(length, hasLower, hasUpper, hasSpecial, hasNumber) {
     return password;
 }
 
-let numbers = [1, 2, 3, 4, 5];
-print(numbers.filter(isEven));
-let ages = [16, 16, 17, 18, 16, 17, 18, 16, 17, 18, 17, 19, 17, 11, 11, 23, 345, 11, 43, 64, 23, 34, 23];
-print(ages.filter(isAdult))
-let words = ["apple", "vva", "longggggg", "asdasd", "asasd"];
-print(words.filter(isLong))
-
-function isAdult(element) {
-    return element > 17;
-}
-
-function isLong(element) {
-    return element.length > 5;
+let numbers = [1, 2, 3, 4, 5, 23, 1, 7, 34, 12, 11, 1, 3, 7, 8, 5, 6];
+print(numbers.reduce(sum))
+print(numbers.reduce(maximum))
+function sum(accumulator, element) {
+    return accumulator + element;
 }
 
 function print(u) {
     console.log(u)
 }
 
-function isEven(element) {
-    return element % 2 === 0
+function maximum(accumulator, element) {
+    return Math.max(accumulator, element);
 }
