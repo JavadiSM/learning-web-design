@@ -31,37 +31,21 @@ function generatePassword(length, hasLower, hasUpper, hasSpecial, hasNumber) {
 }
 
 let numbers = [1, 2, 3, 4, 5];
-numbers.forEach(double);
-numbers.forEach(square);
-numbers.forEach(display);
-
-function double(element, index, array) {
-    array[index] = element * 2;
+let squares = numbers.map(square)
+console.log(squares)
+const dates = ["2024-8-13", "2024-8-14", "2024-8-15"];
+const  formattedDates = dates.map(formatDate);
+console.log(formattedDates)
+function formatDate(element) {
+    const parts = element.split("-");
+    return parts[1] + "/" + parts[2] + "/" + parts[0];
 }
+
 
 function display(element) {
     console.log(element);
 }
 
-function square(element, index, array) {
-    array[index] = Math.pow(element, 2)
-}
-
-let fruits = ["apple", "orange", "banana", "tomato"];
-fruits.forEach(upperCase);
-fruits.forEach(display);
-fruits.forEach(lowerCase);
-fruits.forEach(cap);
-fruits.forEach(display);
-
-function upperCase(element, index, array) {
-    array[index] = element.toUpperCase();
-}
-
-function lowerCase(element, index, array) {
-    array[index] = element.toLowerCase();
-}
-
-function cap(element, index, array) {
-    array[index] = element[0].toUpperCase() + element.slice(1);
+function square(element) {
+    return Math.pow(element, 2)
 }
