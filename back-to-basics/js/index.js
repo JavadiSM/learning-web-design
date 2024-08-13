@@ -1,32 +1,20 @@
-const person1 = {
-    firstName: "name",
-    lastName: "lastname",
-    age: 30,
-    isLoggedIn: false,
-    sayHello: function () {
-        console.log(`hello I am ${this.firstName} and my age is ${this.age}`);
-    },
-    sayGoodBye: (name) => {
-        console.log(`bye dear ${name}`);
-    },
-    test: () => { // this should not work, arrow functions
-        console.log(`hello I am ${this.firstName} and my age is ${this.age}`);
-    }
+function Person(name, age, job, isEmployed) {
+    this.name = name,
+        this.age = age,
+        this.job = job,
+        this.isEmployed = isEmployed,
+        this.hire = function () {
+            this.isEmployed = true;
+        }
+
 }
-const person2 = {
-    firstName: "another name",
-    lastName: "another lastname",
-    age: 24,
-    isLoggedIn: false,
-    sayHello: function () {
-        console.log(`hello I am ${this.firstName} and my age is ${this.age}`);
-    }
-}
-console.log(this);
-person1.test(); // did as expected
-person1.sayHello();
-person1.sayGoodBye("david");
-person2.sayHello();
+
+let david = new Person("David", 23, "unemployed", false);
+let ali = new Person("Ali", 19, "driver", true);
+console.log(david);
+console.log(ali);
+david.hire()
+console.log(`david is now employed:${david.isEmployed}`);
 
 function generateRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
