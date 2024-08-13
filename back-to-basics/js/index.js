@@ -31,21 +31,24 @@ function generatePassword(length, hasLower, hasUpper, hasSpecial, hasNumber) {
 }
 
 let numbers = [1, 2, 3, 4, 5];
-let squares = numbers.map(square)
-console.log(squares)
-const dates = ["2024-8-13", "2024-8-14", "2024-8-15"];
-const  formattedDates = dates.map(formatDate);
-console.log(formattedDates)
-function formatDate(element) {
-    const parts = element.split("-");
-    return parts[1] + "/" + parts[2] + "/" + parts[0];
+print(numbers.filter(isEven));
+let ages = [16, 16, 17, 18, 16, 17, 18, 16, 17, 18, 17, 19, 17, 11, 11, 23, 345, 11, 43, 64, 23, 34, 23];
+print(ages.filter(isAdult))
+let words = ["apple", "vva", "longggggg", "asdasd", "asasd"];
+print(words.filter(isLong))
+
+function isAdult(element) {
+    return element > 17;
 }
 
-
-function display(element) {
-    console.log(element);
+function isLong(element) {
+    return element.length > 5;
 }
 
-function square(element) {
-    return Math.pow(element, 2)
+function print(u) {
+    console.log(u)
+}
+
+function isEven(element) {
+    return element % 2 === 0
 }
